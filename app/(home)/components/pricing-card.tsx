@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Loader } from "@/components/ui/loader";
 import { SignInButton } from "@clerk/clerk-react";
 import { useConvexAuth } from "convex/react";
-import { ArrowRight, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import React from "react";
 
 interface PricingCardProps {
@@ -18,7 +18,7 @@ export const PricingCard = ({
   price,
   subtitle,
   title,
-  priceId,
+  
 }: PricingCardProps) => {
   const { isAuthenticated, isLoading } = useConvexAuth();
   return (
