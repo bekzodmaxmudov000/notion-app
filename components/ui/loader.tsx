@@ -16,8 +16,14 @@ const loaderVariants = cva("text-muted-foreground animate-spin", {
   },
 });
 
-interface LoaderProps extends VariantProps<typeof loaderVariants> {}
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+interface LoaderProps extends VariantProps<typeof loaderVariants> {
+  className?: string;
 
-export const Loader = ({ size }: LoaderProps) => {
-  return <Loader2 className={cn(loaderVariants({ size }))} />;
+}
+
+
+export const Loader = ({ size, className }: LoaderProps) => {
+  return <Loader2 className={cn(loaderVariants({ size }), className)} />;
 };
+
