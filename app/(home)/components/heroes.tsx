@@ -68,4 +68,3 @@ export const Heroes = () => {
 };
 
 
-// 1 soat   14 minut 07 sekunt qoldi
